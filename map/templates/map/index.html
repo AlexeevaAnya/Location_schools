@@ -1,0 +1,10 @@
+{% if list %}
+    <ul>
+    {% for skola in list %}
+        <li> <a href="/map/{{skola.pk}}/>{{skola.name}}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No schools are available.</p>
+{% endif %}
